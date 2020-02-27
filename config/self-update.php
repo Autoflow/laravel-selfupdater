@@ -52,6 +52,7 @@ return [
             'pkg_filename_format' => env('SELF_UPDATER_PKG_FILENAME_FORMAT', 'v_VERSION_'),
             'download_path' => env('SELF_UPDATER_DOWNLOAD_PATH', '/tmp'),
             'private_access_token' => env('SELF_UPDATER_HTTP_PRIVATE_ACCESS_TOKEN', ''),
+            'incremental_updates' => env('SELF_UPDATER_INCREMENTAL_UPDATES', false)
         ],
     ],
 
