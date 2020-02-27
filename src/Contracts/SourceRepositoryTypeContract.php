@@ -45,6 +45,16 @@ interface SourceRepositoryTypeContract
      * @return string
      */
     public function getVersionInstalled(string $prepend = '', string $append = ''): string;
+    
+     /**
+     * Write the version that is currenly installed to .env
+     *
+     * @param string $prepend
+     * @param string $append
+     *
+     * @return bool
+     */
+    public function setVersionInstalled($version): bool;
 
     /**
      * Get the latest version that has been published in a certain repository.
