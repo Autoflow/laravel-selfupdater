@@ -92,10 +92,13 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
                     if(!$this->versionFileExists()) {
                         $this->setVersionFile($release);
                         event(new UpdateAvailable($this->getVersionAvailable()));
+                    } else {
+                        throw new \Exception('have a look and document');
                     }
                     return true;
                 }
             }
+            return false;
         }
 
         else if (version_compare($version, $this->getVersionAvailable(), '<')) {
