@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater\Contracts;
+namespace Autoflow\Updater\Contracts;
 
 interface SourceRepositoryTypeContract
 {

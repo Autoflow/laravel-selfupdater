@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedge\Updater\Commands;
+namespace Autoflow\Updater\Commands;
 
-use Codedge\Updater\UpdaterManager;
+use Autoflow\Updater\UpdaterManager;
 use Illuminate\Console\Command;
 
 class CheckForUpdate extends Command

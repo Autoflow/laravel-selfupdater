@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater\SourceRepositoryTypes;
+namespace Autoflow\Updater\SourceRepositoryTypes;
 
-use Codedge\Updater\AbstractRepositoryType;
-use Codedge\Updater\Contracts\GithubRepositoryTypeContract;
-use Codedge\Updater\Events\UpdateFailed;
-use Codedge\Updater\Events\UpdateSucceeded;
-use Codedge\Updater\Exceptions\InvalidRepositoryException;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
-use Codedge\Updater\Traits\SupportPrivateAccessToken;
-use Codedge\Updater\Traits\UseVersionFile;
+use Autoflow\Updater\AbstractRepositoryType;
+use Autoflow\Updater\Contracts\GithubRepositoryTypeContract;
+use Autoflow\Updater\Events\UpdateFailed;
+use Autoflow\Updater\Events\UpdateSucceeded;
+use Autoflow\Updater\Exceptions\InvalidRepositoryException;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
+use Autoflow\Updater\Traits\SupportPrivateAccessToken;
+use Autoflow\Updater\Traits\UseVersionFile;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\File;
 use Symfony\Component\Finder\Finder;

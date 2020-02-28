@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes;
+namespace Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes;
 
-use Codedge\Updater\Contracts\GithubRepositoryTypeContract;
-use Codedge\Updater\Events\UpdateAvailable;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryType;
+use Autoflow\Updater\Contracts\GithubRepositoryTypeContract;
+use Autoflow\Updater\Events\UpdateAvailable;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryType;
 use Exception;
 use GuzzleHttp\ClientInterface;
 use Illuminate\Support\Facades\File;

@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests;
+namespace Autoflow\Updater\Tests;
 
-use Codedge\Updater\Contracts\GithubRepositoryTypeContract;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
-use Codedge\Updater\SourceRepositoryTypes\HttpRepositoryType;
-use Codedge\Updater\UpdaterFacade;
-use Codedge\Updater\UpdaterServiceProvider;
+use Autoflow\Updater\Contracts\GithubRepositoryTypeContract;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
+use Autoflow\Updater\SourceRepositoryTypes\HttpRepositoryType;
+use Autoflow\Updater\UpdaterFacade;
+use Autoflow\Updater\UpdaterServiceProvider;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;

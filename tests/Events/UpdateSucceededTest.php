@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests\Events;
+namespace Autoflow\Updater\Tests\Events;
 
-use Codedge\Updater\Events\UpdateSucceeded;
-use Codedge\Updater\Tests\TestCase;
+use Autoflow\Updater\Events\UpdateSucceeded;
+use Autoflow\Updater\Tests\TestCase;
 
 class UpdateSucceededTest extends TestCase
 {

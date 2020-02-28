@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater;
+namespace Autoflow\Updater;
 
 use Closure;
-use Codedge\Updater\Contracts\SourceRepositoryTypeContract;
-use Codedge\Updater\Contracts\UpdaterContract;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryType;
-use Codedge\Updater\SourceRepositoryTypes\HttpRepositoryType;
+use Autoflow\Updater\Contracts\SourceRepositoryTypeContract;
+use Autoflow\Updater\Contracts\UpdaterContract;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryType;
+use Autoflow\Updater\SourceRepositoryTypes\HttpRepositoryType;
 use Illuminate\Foundation\Application;
 use InvalidArgumentException;
 

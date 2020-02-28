@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests;
+namespace Autoflow\Updater\Tests;
 
-use Codedge\Updater\AbstractRepositoryType;
+use Autoflow\Updater\AbstractRepositoryType;
 
 class AbstractRepositoryTypeTest extends TestCase
 {

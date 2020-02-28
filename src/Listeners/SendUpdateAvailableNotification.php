@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedge\Updater\Listeners;
+namespace Autoflow\Updater\Listeners;
 
-use Codedge\Updater\Events\UpdateAvailable;
+use Autoflow\Updater\Events\UpdateAvailable;
 use Illuminate\Mail\Mailer;
 use Illuminate\Support\Facades\Log;
 

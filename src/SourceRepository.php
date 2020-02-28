@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedge\Updater;
+namespace Autoflow\Updater;
 
-use Codedge\Updater\Contracts\SourceRepositoryTypeContract;
+use Autoflow\Updater\Contracts\SourceRepositoryTypeContract;
 use Illuminate\Support\Facades\Artisan;
 
 /**

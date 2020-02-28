@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater\Exceptions;
+namespace Autoflow\Updater\Exceptions;
 
 use Exception;
 use Illuminate\Support\Facades\Log;

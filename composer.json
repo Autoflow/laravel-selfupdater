@@ -31,12 +31,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Codedge\\Updater\\": "src/"
+      "Autoflow\\Updater\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Codedge\\Updater\\Tests\\": "tests/"
+      "Autoflow\\Updater\\Tests\\": "tests/"
     }
   },
   "config": {
@@ -45,10 +45,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Codedge\\Updater\\UpdaterServiceProvider"
+        "Autoflow\\Updater\\UpdaterServiceProvider"
       ],
       "aliases": {
-        "Updater": "Codedge\\Updater\\UpdaterFacade"
+        "Updater": "Autoflow\\Updater\\UpdaterFacade"
       }
     }
   },

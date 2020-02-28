@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedge\Updater\Events;
+namespace Autoflow\Updater\Events;
 
-use Codedge\Updater\Contracts\SourceRepositoryTypeContract;
+use Autoflow\Updater\Contracts\SourceRepositoryTypeContract;
 
 /**
  * HasWrongPermissions.php.

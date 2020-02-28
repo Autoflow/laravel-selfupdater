@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater\Traits;
+namespace Autoflow\Updater\Traits;
 
 trait SupportPrivateAccessToken
 {

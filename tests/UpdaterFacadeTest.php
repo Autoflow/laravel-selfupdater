@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests;
+namespace Autoflow\Updater\Tests;
 
 use Updater;
 

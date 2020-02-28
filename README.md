@@ -51,7 +51,7 @@ return [
     'providers' => [
         // ...
         
-        Codedge\Updater\UpdaterServiceProvider::class, // [1]
+        Autoflow\Updater\UpdaterServiceProvider::class, // [1]
     ],
     
     // ...
@@ -59,7 +59,7 @@ return [
     'aliases' => [
         // ...
         
-        'Updater' => Codedge\Updater\UpdaterFacade::class, // [2]
+        'Updater' => Autoflow\Updater\UpdaterFacade::class, // [2]
 
 ]
 ```
@@ -77,11 +77,11 @@ Additionally add the listener to your `app/Providers/EventServiceProvider.php` `
 protected $listen = [
     // ...
     
-    \Codedge\Updater\Events\UpdateAvailable::class => [
-        \Codedge\Updater\Listeners\SendUpdateAvailableNotification::class
+    \Autoflow\Updater\Events\UpdateAvailable::class => [
+        \Autoflow\Updater\Listeners\SendUpdateAvailableNotification::class
     ], // [3]
-    \Codedge\Updater\Events\UpdateSucceeded::class => [
-        \Codedge\Updater\Listeners\SendUpdateSucceededNotification::class
+    \Autoflow\Updater\Events\UpdateSucceeded::class => [
+        \Autoflow\Updater\Listeners\SendUpdateSucceededNotification::class
     ], // [3]
 
 ];
@@ -91,7 +91,7 @@ protected $listen = [
 ## Configuration
 After installing the package you need to publish the configuration file via
  ```sh
- $ php artisan vendor:publish --provider="Codedge\Updater\UpdaterServiceProvider"
+ $ php artisan vendor:publish --provider="Autoflow\Updater\UpdaterServiceProvider"
  ```
  
 **Note:** Please enter correct value for vendor and repository name in your `config/self-updater.php` if you want to
@@ -145,7 +145,7 @@ a `private_access_token` field, where you can set the token.
 ## Usage
 To start an update process, i. e. in a controller, just use:
 ```php
-Route::get('/', function (\Codedge\Updater\UpdaterManager $updater) {
+Route::get('/', function (\Autoflow\Updater\UpdaterManager $updater) {
 
     // Check if new version is available
     if($updater->source()->isNewVersionAvailable()) {

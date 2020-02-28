@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests;
+namespace Autoflow\Updater\Tests;
 
-use Codedge\Updater\SourceRepository;
-use Codedge\Updater\UpdaterManager;
+use Autoflow\Updater\SourceRepository;
+use Autoflow\Updater\UpdaterManager;
 use InvalidArgumentException;
 
 class UpdaterManagerTest extends Testcase

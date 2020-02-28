@@ -1,13 +1,13 @@
 <?php
 
-namespace Codedge\Updater;
+namespace Autoflow\Updater;
 
-use Codedge\Updater\Commands\CheckForUpdate;
-use Codedge\Updater\Contracts\GithubRepositoryTypeContract;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
-use Codedge\Updater\SourceRepositoryTypes\HttpRepositoryType;
+use Autoflow\Updater\Commands\CheckForUpdate;
+use Autoflow\Updater\Contracts\GithubRepositoryTypeContract;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
+use Autoflow\Updater\SourceRepositoryTypes\HttpRepositoryType;
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 

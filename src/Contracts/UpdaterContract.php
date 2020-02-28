@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedge\Updater\Contracts;
+namespace Autoflow\Updater\Contracts;
 
 interface UpdaterContract
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater;
+namespace Autoflow\Updater;
 
-use Codedge\Updater\Events\HasWrongPermissions;
+use Autoflow\Updater\Events\HasWrongPermissions;
 use Exception;
 use GuzzleHttp\ClientInterface;
 use Illuminate\Support\Facades\File;

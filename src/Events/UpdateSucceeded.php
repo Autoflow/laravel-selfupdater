@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedge\Updater\Events;
+namespace Autoflow\Updater\Events;
 
 /**
  * UpdateFailed.php.

@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests\SourceRepositoryTypes\GithubRepositoryTypes;
+namespace Autoflow\Updater\Tests\SourceRepositoryTypes\GithubRepositoryTypes;
 
-use Codedge\Updater\Events\UpdateAvailable;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
-use Codedge\Updater\Tests\TestCase;
+use Autoflow\Updater\Events\UpdateAvailable;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
+use Autoflow\Updater\Tests\TestCase;
 use Exception;
 use GuzzleHttp\Client;
 use InvalidArgumentException;

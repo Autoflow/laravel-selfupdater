@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Codedge\Updater\Tests\SourceRepositoryTypes;
+namespace Autoflow\Updater\Tests\SourceRepositoryTypes;
 
-use Codedge\Updater\Events\UpdateAvailable;
-use Codedge\Updater\Exceptions\InvalidRepositoryException;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
-use Codedge\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
-use Codedge\Updater\Tests\TestCase;
-use Codedge\Updater\Contracts\GithubRepositoryTypeContract;
+use Autoflow\Updater\Events\UpdateAvailable;
+use Autoflow\Updater\Exceptions\InvalidRepositoryException;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubBranchType;
+use Autoflow\Updater\SourceRepositoryTypes\GithubRepositoryTypes\GithubTagType;
+use Autoflow\Updater\Tests\TestCase;
+use Autoflow\Updater\Contracts\GithubRepositoryTypeContract;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithContainer;
 use InvalidArgumentException;
 use Exception;

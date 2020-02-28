@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Codedge\Updater\SourceRepositoryTypes;
+namespace Autoflow\Updater\SourceRepositoryTypes;
 
-use Codedge\Updater\AbstractRepositoryType;
-use Codedge\Updater\Contracts\SourceRepositoryTypeContract;
-use Codedge\Updater\Events\UpdateAvailable;
-use Codedge\Updater\Events\UpdateFailed;
-use Codedge\Updater\Events\UpdateSucceeded;
-use Codedge\Updater\Traits\SupportPrivateAccessToken;
-use Codedge\Updater\Traits\UseVersionFile;
+use Autoflow\Updater\AbstractRepositoryType;
+use Autoflow\Updater\Contracts\SourceRepositoryTypeContract;
+use Autoflow\Updater\Events\UpdateAvailable;
+use Autoflow\Updater\Events\UpdateFailed;
+use Autoflow\Updater\Events\UpdateSucceeded;
+use Autoflow\Updater\Traits\SupportPrivateAccessToken;
+use Autoflow\Updater\Traits\UseVersionFile;
 use GuzzleHttp\Client;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\File;

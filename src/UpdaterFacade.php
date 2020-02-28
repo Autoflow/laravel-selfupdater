@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedge\Updater;
+namespace Autoflow\Updater;
 
 use Illuminate\Support\Facades\Facade;
 
