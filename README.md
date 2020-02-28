@@ -252,7 +252,7 @@ public function update(UpdaterManager $updater)
 Please see the [contributing guide](CONTRIBUTING.md).
 
 ## Roadmap
-Just a quickly sketched [roadmap](https://github.com/autoflow/laravel-selfupdater/wiki/Roadmap) what still needs to be implemented.
+Just a quickly sketched [roadmap](https://github.com/Autoflow/laravel-selfupdater/wiki/Roadmap) what still needs to be implemented.
 
 ## Licence
 The MIT License (MIT). Please see [Licence file](LICENSE) for more information.
