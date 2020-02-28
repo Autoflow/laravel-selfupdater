@@ -1,5 +1,5 @@
 {
-  "name": "codedge/laravel-selfupdater",
+  "name": "Autoflow/laravel-selfupdater",
   "description": "Providing an auto-updating functionality for your self-hosted Laravel application.",
   "license": "MIT",
   "keywords": [
@@ -13,8 +13,8 @@
     "self-hosted laravel application"
   ],
   "support": {
-    "issues": "https://github.com/codedge/laravel-selfupdater/issues",
-    "source": "https://github.com/codedge/laravel-selfupdater"
+    "issues": "https://github.com/Autoflow/laravel-selfupdater/issues",
+    "source": "https://github.com/Autoflow/laravel-selfupdater"
   },
   "authors": [
     {
@@ -22,7 +22,11 @@
       "email": "holger.loesken@codedge.de",
       "homepage": "http://codedge.de",
       "role": "Developer"
-    }
+    }, {
+      "name: "A. Münch",
+      "email": "alex@autoflow.org",
+      "homepage": "http://autoflow.org",
+      "role": "Fork"
   ],
   "autoload": {
     "psr-4": {
