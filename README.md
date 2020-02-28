@@ -1,12 +1,5 @@
 # Laravel Application Self-Updater
 
-[![Latest Stable Version](https://poser.pugx.org/codedge/laravel-selfupdater/v/stable?format=flat-square)](https://packagist.org/packages/codedge/laravel-selfupdater)
-[![Total Downloads](https://poser.pugx.org/codedge/laravel-selfupdater/downloads?format=flat-square)](https://packagist.org/packages/codedge/laravel-selfupdater)
-[![](https://github.com/codedge/laravel-selfupdater/workflows/Tests/badge.svg)](https://github.com/codedge/laravel-selfupdater/actions)
-[![StyleCI](https://styleci.io/repos/64463948/shield)](https://styleci.io/repos/64463948)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dd836e58656b4e25b34b2a4ac8197142)](https://www.codacy.com/app/codedge/laravel-selfupdater?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codedge/laravel-selfupdater)
-[![codecov](https://codecov.io/gh/codedge/laravel-selfupdater/branch/master/graph/badge.svg)](https://codecov.io/gh/codedge/laravel-selfupdater)
-[![composer.lock](https://poser.pugx.org/codedge/laravel-selfupdater/composerlock?format=flat-square)](https://packagist.org/packages/codedge/laravel-selfupdater)
 
 This package provides some basic methods to implement a self updating
 functionality for your Laravel 5 application. Already bundled are some
@@ -30,10 +23,10 @@ lovely users with Git and/or Composer commands ;-)
 
 To install the latest version from the master using [Composer](https://getcomposer.org/):
 ```sh
-$ composer require codedge/laravel-selfupdater
+$ composer require autoflow/laravel-selfupdater
 ```
 
-This adds the _codedge/laravel-selfupdater_ package to your `composer.json` and downloads the project.
+This adds the _autoflow/laravel-selfupdater_ package to your `composer.json` and downloads the project.
 
 ## Register the package
 
@@ -186,7 +179,7 @@ This is the default. Updates will be fetched by using a tagged commit, aka relea
 
 #### Branch-based updates
 
-Select the branch that should be used via the `use_branch` setting [inside the configuration](https://github.com/codedge/laravel-selfupdater/blob/master/config/self-update.php).
+Select the branch that should be used via the `use_branch` setting [inside the configuration](https://github.com/autoflow/laravel-selfupdater/blob/master/config/self-update.php).
 
 ```php
 // ...
@@ -259,7 +252,7 @@ public function update(UpdaterManager $updater)
 Please see the [contributing guide](CONTRIBUTING.md).
 
 ## Roadmap
-Just a quickly sketched [roadmap](https://github.com/codedge/laravel-selfupdater/wiki/Roadmap) what still needs to be implemented.
+Just a quickly sketched [roadmap](https://github.com/autoflow/laravel-selfupdater/wiki/Roadmap) what still needs to be implemented.
 
 ## Licence
 The MIT License (MIT). Please see [Licence file](LICENSE) for more information.
