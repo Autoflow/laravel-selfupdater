@@ -1,5 +1,5 @@
 {
-  "name": "Autoflow/laravel-selfupdater",
+  "name": "autoflow/laravel-selfupdater",
   "description": "Providing an auto-updating functionality for your self-hosted Laravel application.",
   "license": "MIT",
   "keywords": [
