@@ -27,6 +27,7 @@
       "email": "alex@autoflow.org",
       "homepage": "http://autoflow.org",
       "role": "Fork"
+    }
   ],
   "autoload": {
     "psr-4": {
