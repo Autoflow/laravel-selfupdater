@@ -235,6 +235,28 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
         $this->config['version_installed'] = $version;
         return true;
     }
+    
+     /**
+     * Write the version that is currenly installed to .env
+     *
+     * @param string $version
+     * 
+     * @throws \Exception
+     *
+     * @return bool
+     */
+    public function setVersionInstalled($version):bool {
+        $key = 'SELF_UPDATER_VERSION_INSTALLED';
+        if(!env($key)) throw new \Exception('Version key not found');
+        $path = app()->environmentFilePath();
+        $escaped = preg_quote('='.$this->config['version_installed'] );
+        file_put_contents($path, preg_replace("/^{$key}{$escaped}/m",
+            "{$key}={$version}",
+            file_get_contents($path)
+        ));
+        $this->config['version_installed'] = $version;
+        return true;
+    }
 
     /**
      * Get the latest version that has been published in a certain repository.
