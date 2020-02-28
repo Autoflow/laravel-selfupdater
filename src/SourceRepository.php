@@ -90,6 +90,18 @@ class SourceRepository implements SourceRepositoryTypeContract
     {
         return $this->sourceRepository->getVersionInstalled($prepend, $append);
     }
+    
+     /**
+     * Write the version that is currenly installed.
+     *
+     * @param string $version
+     *
+     * @return bool
+     */
+    public function setVersionInstalled($version): bool
+    {
+        return $this->sourceRepository->setVersionInstalled($version);
+    }
 
     /**
      * Get the latest version that has been published in a certain repository.
