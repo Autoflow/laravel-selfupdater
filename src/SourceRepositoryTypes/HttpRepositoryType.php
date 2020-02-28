@@ -124,19 +124,20 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
         if (($releaseCollection = $this->getPackageReleases())->isEmpty()) {
             throw new \Exception('Cannot find a release to update. Please check the repository you\'re pulling from');
         }
-
-        $release = $releaseCollection->first();
+        
         $storagePath = Str::finish($this->config['download_path'], '/');
 
         if (! File::exists($storagePath)) {
             File::makeDirectory($storagePath, 493, true, true);
         }
 
-        if (! $version) {
+        if ($version) {
             $release = $releaseCollection->where('name', $version)->first();
             if (! $release) {
                 throw new \Exception('Given version was not found in release list.');
             }
+        } else {
+            $release = $releaseCollection->first();
         }
 
         $versionName = $this->prepend.$release->name.$this->append;
