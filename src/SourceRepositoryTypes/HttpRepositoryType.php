@@ -64,6 +64,17 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
         $this->setAccessToken($config['private_access_token']);
     }
 
+
+    /**
+     * Check if network is available
+     *
+     * @return bool
+     */
+    public function isHostAvailable(): bool {
+        $host = parse_url($this->config['repository_url'], PHP_URL_HOST);
+        return (bool) @fsockopen($host, 80);
+    }
+
     /**
      * Check repository if a newer version than the installed one is available.
      *
@@ -76,6 +87,9 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
      */
     public function isNewVersionAvailable($currentVersion = ''): bool
     {
+
+        if(!$this->isHostAvailable()) return false;
+
         $version = $currentVersion ?: $this->getVersionInstalled();
 
         if (! $version) {
@@ -91,9 +105,11 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
                 if(version_compare($version, $release, '<')) {
                     if(!$this->versionFileExists()) {
                         $this->setVersionFile($release);
-                        event(new UpdateAvailable($this->getVersionAvailable()));
+                        event(new UpdateAvailable($release));
                     } else {
-                        throw new \Exception('have a look and document');
+                        // Nothing to do
+                        // Current version available is available stored within storage.app.self-updater-new-version
+                        // Warum auch immer die Versionsnummer im storage gespeichert wird weiß wohl nur der Originalautor :-)
                     }
                     return true;
                 }
@@ -282,10 +298,12 @@ class HttpRepositoryType extends AbstractRepositoryType implements SourceReposit
         $format = str_replace('_VERSION_', '\d+\.\d+\.\d+',
                     str_replace('.', '\.', $this->config['pkg_filename_format'])
                   ).'.zip';
+
         $count = preg_match_all(
-            "/<a.*href=\".*$format\">($format)<\/a>/i",
+            "/<a.*href=\".*$format\">.*($format)<\/a>/i",
             $this->client->get($url)->getBody()->getContents(),
             $files);
+
         $collection = [];
         $url = preg_replace('/\/$/', '', $url);
         for ($i = 0; $i < $count; $i++) {

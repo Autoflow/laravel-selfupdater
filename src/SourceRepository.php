@@ -65,6 +65,10 @@ class SourceRepository implements SourceRepositoryTypeContract
         return $updateStatus;
     }
 
+    public function isHostAvailable(): bool {
+        return $this->sourceRepository->isHostAvailable();
+    }
+
     /**
      * Check repository if a newer version than the installed one is available.
      *

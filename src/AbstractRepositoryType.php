@@ -191,4 +191,13 @@ abstract class AbstractRepositoryType
     {
         return count(array_intersect($directory, $excludedDirs)) ? true : false;
     }
+
+    /**
+     * Check if network is available
+     *
+     * @return bool
+     */
+    public function isHostAvailable(): bool {
+        dd($this->config);
+    }
 }
